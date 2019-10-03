@@ -1,5 +1,5 @@
-import sys #importing a few libraries that will make this a lot easier.
-import math
+import sys #used for gathering data via standard input
+import math #used in the quadratic formula section
 
 print("Please paste in your numbers and <CTRL-Z> when finished.")
 A = sys.stdin.read().strip("\n").split() #create a new list to store everything from the standard input, which has been split and stripped of all new line chars.
