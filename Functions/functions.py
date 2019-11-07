@@ -75,9 +75,9 @@ else:
     OnetoOne = False
 
 #print out all the stuff
-print("Domain:",DomainList)
-print("Codomain:",CodomainList)
-print("Relation:",pairs)
+print("Domain:","{",", ".join(DomainList),"}")
+print("Codomain:","{",", ".join(CodomainList),"}")
+print("Relation:","{",", ".join(pairs),"}")
 if Function == True:
     print("This is a function")
     if (Onto == True):
