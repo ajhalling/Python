@@ -1,0 +1,96 @@
+body {
+	font-family: sans-serif;
+	background-color: white;
+}
+
+textarea {
+	font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+}
+
+table {
+	border: 1px black solid;
+}
+
+td, th {
+	border: 1px black solid;
+	padding: 2px;
+}
+
+.h5r td {
+ border: 0px;
+ width: 340px; 
+}
+
+.h5r {
+border : none;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+code {
+	font-size: 1.0em;
+	color: blue;
+}
+
+ins {
+	background-color: yellow;
+}
+
+#menu {
+	text-align: center;
+}
+
+#myschedule td {
+	text-align: center;
+}
+
+#myschedule table {
+	caption-side: bottom;
+}
+
+#myschedule caption {
+	margin-top: 10px;
+}
+
+.yellow, .collab2 {
+	background-color: yellow;
+	margin: 10px 20px 10px 20px;
+	padding: 10px;
+}
+
+.green, .collab1 {
+        background-color: green;
+        margin: 10px 20px 10px 20px;
+        padding: 10px;
+}
+
+.red, .collab3 {
+        background-color: red;
+        margin: 10px 20px 10px 20px;
+        padding: 10px;
+}
+
+.grey {
+        background-color: #c0c0c0;
+        margin: 10px 20px 10px 20px;
+        padding: 10px;
+
+}
+
+.special {
+	text-align: center;
+	text-shadow: 0.1em 0.1em 0.2em green;
+	font-size: 150%;
+}
+
+.addy {
+	position: relative;
+	top: 3px;
+}
+
+/*
+tr:first-of-type { background-color: yellow; }
+tr:nth-of-type(even) { background-color: gray; }
+*/

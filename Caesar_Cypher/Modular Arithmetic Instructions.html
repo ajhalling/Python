@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0059)http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		
+		<title>CIS 206 Programming Assignment</title>
+		<link type="text/css" rel="stylesheet" href="./Modular Arithmetic Instructions_files/classes.css">
+	</head>
+	<body cz-shortcut-listen="true">
+	<h2 class="yellow">Modular Arithmetic Lab</h2>
+<hr>
+<h3>Part 1:</h3>
+<p>You are the mild-mannered secretary to the evil <a href="http://www.youtube.com/watch?v=mkUH6T7H8OU">Darth Sidious</a>. Your master has entrusted you as the guardian of his secret plans to take over the galaxy. As a safety measure, he has asked you to encode all of his messages using a Caesar cipher. Naturally, you decide to write a program to help you.</p>
+<h3>What you have to do:</h3>
+<ul>
+<li>Your program should accept input from <strong>standard input</strong> (not a file.)
+</li>
+<li>
+The first line of the input will contain a message in plain text. 
+ The second line of the input will be a numeric value <i>k</i> that
+specifies the key to be used to encode the message.
+</li>
+<li>
+Print out the encoded message to the console. 
+</li>
+<li><i>Suggestion:</i> You may find the example on pages 428–429 of the textbook very helpful.</li>
+</ul>
+<h3>Part 2:</h3>
+<p>Little does Darth Sidious know, however, that you are in fact a <a href="https://www.youtube.com/watch?v=gvCGmIavnXw">Jedi padawan</a> working for the <a href="https://www.youtube.com/watch?v=7oWfo4D6eOU">Rebel Alliance</a>. Thus, you have been secretly transmitting all of Darth Sidious's messages to Alliance officials, along with the key needed to decode them.</p>
+<h3>What you have to do:</h3>
+<ul>
+<li>Make a copy of your program with a different filename, because you're going to be making some small changes to it!</li>
+<li>Do the same thing as <b>Part 1</b>, except this time you're reading in an encoded message, and your program should print out the 
+decoded message to the console.
+</li>
+</ul>
+<h3>Part 3:</h3>
+<p>Bad news! Darth Sidious suspects that you may have conflicting loyalties.  In his wrath, he has strictly forbidden you from including the key with your encodings. Regretfully, you inform your colleagues in the Alliance that they must decode your messages (which you bravely continue to transmit without Darth Sidious's knowledge) <i>without</i> knowing the key beforehand.</p>
+<h3>What you have to do:</h3>
+<ul>
+<li>Make another copy of your program with a new file name; you'll be making another small change to it.</li>
+<li>Your program now only reads the first line of the input. Anything beyond the first line is ignored. Thus, your program is not told which key was used to encode the message.</li>
+<li>Print out all 26 possible decodings of the message, one for each possible key, to the console. Hopefully one of them will make sense!</li>
+</ul>
+<hr>
+
+<h3>Example Files</h3>
+Here are some example inputs you can test your code with:
+<ul>
+<li>Message 1: <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/input1.txt">plaintext</a> and <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/input1a.txt">ciphertext</a> (with <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/all1.txt">all 26 decodings</a>)</li>
+<li>Message 2: <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/input2.txt">plaintext</a> and <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/input2a.txt">ciphertext</a> (with <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/all2.txt">all 26 decodings</a>)</li>
+<li>Message 3: <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/input3.txt">plaintext</a> and <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/input3a.txt">ciphertext</a> (with <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/all3.txt">all 26 decodings</a>)</li>
+<li>Message 4: <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/input4.txt">plaintext</a> and <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/input4a.txt">ciphertext</a> (with <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/all4.txt">all 26 decodings</a>)</li>
+<li>Message 5: <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/input5.txt">plaintext</a> and <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/input5a.txt">ciphertext</a> (with <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/all5.txt">all 26 decodings</a>)</li>
+<li>Message 6: <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/input6.txt">plaintext</a> and <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/input6a.txt">ciphertext</a> (with <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/all6.txt">all 26 decodings</a>)</li>
+<li>Message 7: <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/input7.txt">plaintext</a> and <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/input7a.txt">ciphertext</a> (with <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/all7.txt">all 26 decodings</a>)</li>
+</ul>
+<h3>After you have finished:</h3>
+<ul>
+<li>Print up the <a href="http://draperg.cis.byuh.edu/classes/cis206/hw/secret_agent/cover_sheet.pdf">cover page</a>.</li>
+<li>Upload your source code file to Canvas.</li>
+<li>Demonstrate your program to a T.A. sometime after uploading your code. This may or may not be the same day you submit your code to Canvas. (Although if you pass off after the due date, be prepared to convince the TA that you're using the same code you submitted!) The TAs generally work Monday—Thursday from 5pm to 11pm; and Fridays from 5pm to 8pm.</li>
+<li>Sign your cover page, and turn it in to the TA.</li>
+</ul>
+
+<hr>
+<h3>RUBRIC:</h3>
+<ol>
+<li>Explain to the TA how you parse each line of the input. (3 points)</li>
+<li>Explain to the TA how you convert each character to its numeric code. (3 points)</li>
+<li>Explain to the TA how you apply the Caesar Cipher strategy to the number. (3 points)</li>
+<li>Explain to the TA how you use modulo (or something similar) to keep the numbers in the correct range. (4 points)</li>
+<li>Show the TA how you convert the numbers back to characters. (3 points)</li>
+<li>Show the TA how you deal with spaces in the text. (3 points)</li>
+<li>For Part 1, your program produces the correct output for at least 4 of the inputs. (4 points)</li>
+<li>For Part 2, your program produces the correct output for at least 4 of the inputs. (4 points)</li>
+<li>For Part 3, show the TA how you cycle through each of the 26 keys. (4 points)</li>
+<li>For Part 3, one of the outputs is the correct decoding. (4 points)</li>
+<li>Each major section of the program is commented. (2 points)</li>
+<li>Source code is neatly and consistently indented. (2 points)</li>
+<li>Show the TA that you uploaded your source code to Canvas. (1 point)</li>
+<li><strong>EXTRA CREDIT:</strong> What is <q>Message 8</q>? Be the first to email it to me for 2 extra points.</li> 
+<li><b><q>EARLY BIRD</q> BONUS</b>: Submit your code to Canvas at least one day early for an extra point!</li>
+</ol>
+<p>
+-------------------------------------------------------<br>
+TOTAL: 40 points
+</p>
+
+
+
+
+<div id="fpCE_version" style="display:none">6.3.6</div></body></html>
